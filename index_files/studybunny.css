@@ -1,0 +1,476 @@
+ @font-face {
+   font-family: 'quicksand';
+   src: url('/Quicksand-Bold.ttf') format('truetype');
+}
+
+
+body {
+    background-color: #c9f5ff;
+    font-family: 'quicksand', 'Patua One', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    text-align: center;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    
+    background-color: black;
+    position: fixed;
+    height: 150px;
+    width: 100vw;
+    text-align: center;
+    font-size: 40px;
+    top: 0;
+}
+
+.top-nav-item {
+    display: flex;
+    align-items: center;
+    
+    flex: 1;
+        
+    height:inherit;
+    color: white;
+    text-decoration: none;
+
+}
+
+.top-nav-item-text {
+    flex: 1;
+}
+
+.top-nav-item:hover {
+    background-color: #292929;
+}
+
+.badges-flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    margin: 0;
+}
+
+
+.study-bunny-icon {
+    margin-top: 287px;
+    width: 43%;
+}
+
+.title{
+  font-size: 100px;
+  line-height: 110px;
+}
+
+.description {
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.apple-app-store-icon {
+    flex: 1;
+    min-width: 500px;
+}
+
+.google-play-icon {
+    margin-top: 10px;
+    flex: 1;
+    max-width: 500px;
+}
+
+.privacy-policy-link {
+    display: inline-block;
+    margin-top: 13px;
+    color: #777777;
+    font-size: 40px;
+}
+
+.privacy-policy-content {
+    font-size: 20px;
+    margin-top: 150px;
+    padding: 25px;
+}
+
+.privacy-policy-content p {
+    padding-top: 10px;
+}
+
+.ga-title {
+    font-size: 130px;
+    margin-top: 174px;
+    line-height: 126px;
+    
+}
+
+.ga-upload-text {
+    font-size: 60px;
+}
+
+.ga-name {
+    font-size: 60px;
+    padding-top: 10px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.ga-file-upload {
+    font-size: 60px;
+    margin-top: 11px;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.ga-submission-form{
+    margin-top: 43px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.gallery-container > div {
+    max-width: 29%;
+    margin-bottom: 18px;
+}
+
+.gallery-container > div > img {
+    max-width: 100%;
+}
+
+.gallery-container > div > p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    overflow-wrap: break-word;
+}
+
+.gallery-container > .unapproved {
+    max-width: 46%;
+    margin-bottom: 18px;
+    font-size: 66px;
+}
+
+.gallery-container > .unapproved > p {
+    font-size: 37px;
+}
+
+#sbNameHandle {
+    width: 400px;
+    height: 100px;
+    font-size: 36px;
+    border-radius: 42px;
+    border: 7px solid black;
+    text-align: center;
+    font-family: inherit;
+}
+
+#sbFileUpload {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+#sbFileUpload + div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 180px;
+    font-size: 60px;
+}
+
+#sbFileUpload + div > label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 496px;
+    height: 103px;
+    color: white;
+    background-color: #3e15bb;
+    border-radius: 42px;
+    margin-top: 24px;
+    border: 7px solid black;
+}
+
+#sbFileUpload:focus + div > label,
+#sbFileUpload + div > label:hover {
+    background-color: #291075;
+}
+
+#sbSubmit {
+    font-size: 60px;
+    border: 10px solid black;
+    width: 736px;
+    height: 185px;
+    background-color: #ab316f;
+    margin-top: 50px;
+    font-family: inherit;
+    color: white;
+    border-radius: 29px;
+}
+
+#sbMessage {
+    font-size: 60px;
+    margin-top: 30px;
+}
+
+#sbFileName {
+    font-size: 30px;
+}
+
+.reset-password-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reset-password-form > input {
+    margin-top: 100px;
+    width: 78%;
+    height: 200px;
+    font-size: 60px;
+    padding-left: 30px;
+}
+
+.reset-password-form > button {
+    margin-top: 100px;
+    width: 81%;
+    height: 200px;
+    font-size: 60px;
+}
+
+.reset-password-form > p {
+    margin-top: 100px;
+    font-size: 60px;
+}
+
+#tutorial-flexbox {
+    margin-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 170px;
+    display: flex;
+    flex-direction: column;
+}
+
+#tutorialDesc {
+    padding-bottom: 20px;
+}
+
+.sm-icon {
+    margin-top: 60px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#hp-body{
+    font-family: 'quicksand'; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    background-image: linear-gradient(to bottom right, #ff7ec8, #4e9bfb);
+}
+
+#hp-title{
+   font-size: 105px; 
+   color: #f5f5f5;
+}
+
+#hp-desc{
+   font-size: 35px; 
+   color: #f5f5f5;
+   margin-bottom: 50px;
+}
+
+#title-container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donations {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.donations a {
+   color: #925123;
+}
+    
+@media (orientation : landscape) {
+    #hp-desc{
+   font-size: 25px; 
+   color: #f5f5f5;
+   margin-bottom: 50px;
+}
+
+    .top-nav {
+        height: 70px;
+        font-size: 20px;
+    }
+    
+    .study-bunny-icon {
+       margin-top: 124px;
+       width:250px;
+    }
+    
+    .title{
+      font-size: 60px;
+      line-height: 60px;
+    }
+    
+    .description {
+      margin-top: 10px;
+      font-size: 40px;
+      line-height: 37px;
+    }
+    
+   .donations {
+        height: 62px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+    
+    .badges-flexbox {
+        flex-direction: row;
+    }
+
+    .apple-app-store-icon {
+        min-width: 0;
+        height: 78.92px;
+        margin-right: 18px;
+    }
+    
+    .google-play-icon {
+          height: 78.92px;
+      margin-top: 0px;
+    }
+    
+    .privacy-policy-link {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    
+    .privacy-policy-content {
+        margin-top: 70px;
+        padding: 10px;
+    }
+    
+    .ga-title {
+        font-size: 82px;
+        margin-top: 109px;
+    }
+    
+    .ga-name {
+        font-size: 46px;
+    }
+    
+    #sbNameHandle {
+        height: 78px;
+    }
+    
+    .ga-file-upload {
+        font-size: 46px;
+    }
+    
+    #sbFileUpload + div {
+        font-size: 51px;
+    }
+    
+    #sbFileUpload + div > label {
+        height: 82px;
+        margin-top: -30px;
+    }
+    
+    #sbSubmit {
+        margin-top: 0px;
+        height: 144px;
+    }
+    
+    #sbMessage {
+        font-size: 46px;
+    }
+    
+    .ga-submission-form {
+        margin-top: 8px;
+    }
+    
+    .gallery-container > .unapproved {
+        max-width: 14%;
+        margin-bottom: 18px;
+        font-size: 14px;
+    }
+    
+    .gallery-container > .unapproved > p {
+        font-size: 14px;
+    }
+    
+    .reset-password-form > input {
+        margin-top: 30px;
+        width: 35%;
+        height: 150px;
+        padding-left: 30px;
+    }
+    
+    .reset-password-form > button {
+        margin-top: 30px;
+        width: 37%;
+        height: 150px;
+    }
+    
+    .reset-password-form > p {
+        margin-top: 50px;
+    }
+    
+    #tutorial-flexbox {
+        margin-left: 20px;
+        padding-top: 80px;
+    }
+    
+    .sm-icon {
+        margin-top: 10px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+}
+
+
